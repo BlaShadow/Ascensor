@@ -14,6 +14,7 @@ public abstract class State {
     private int timer;
     private Ascensor asc;
 
+
     public State(Ascensor ascensor){
         this.asc = ascensor;
     }

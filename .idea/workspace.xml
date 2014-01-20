@@ -5,7 +5,7 @@
     <ignored path="Ascensor.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/IState.java" changelist="8e26d70b-4300-4bde-be46-13c7d43a0d00" time="1390068072244" ignored="false" />
-    <file path="/State.java" changelist="8e26d70b-4300-4bde-be46-13c7d43a0d00" time="1390090805945" ignored="false" />
+    <file path="/State.java" changelist="8e26d70b-4300-4bde-be46-13c7d43a0d00" time="1390195180347" ignored="false" />
     <file path="/Ascensor.java" changelist="8e26d70b-4300-4bde-be46-13c7d43a0d00" time="1390162754657" ignored="false" />
     <file path="/DoorOpen.java" changelist="8e26d70b-4300-4bde-be46-13c7d43a0d00" time="1390077315981" ignored="false" />
     <file path="/Command.java" changelist="8e26d70b-4300-4bde-be46-13c7d43a0d00" time="1390081668196" ignored="false" />
@@ -80,10 +80,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="State.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="State.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/shadow/states/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="18" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+            <state line="16" column="4" selection-start="305" selection-end="305" vertical-scroll-proportion="0.46896553">
               <folding />
             </state>
           </provider>
@@ -110,7 +110,7 @@
       <file leaf-file-name="Iddle.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/shadow/states/Iddle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="18" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+            <state line="11" column="16" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,10 +143,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ascensor.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Ascensor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/shadow/entidad/Ascensor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="134" selection-start="341" selection-end="341" vertical-scroll-proportion="0.49465242">
+            <state line="17" column="134" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#Ascensor#0" expanded="false" />
@@ -178,18 +178,18 @@
         <option value="$PROJECT_DIR$/src/org/shadow/states/DoorOpen.java" />
         <option value="$PROJECT_DIR$/src/org/shadow/entidad/Command.java" />
         <option value="$PROJECT_DIR$/src/org/shadow/manager/IMediator.java" />
-        <option value="$PROJECT_DIR$/src/org/shadow/states/State.java" />
         <option value="$PROJECT_DIR$/src/org/shadow/manager/Manager.java" />
         <option value="$PROJECT_DIR$/src/org/shadow/states/InActive.java" />
         <option value="$PROJECT_DIR$/src/org/shadow/entidad/Ascensor.java" />
+        <option value="$PROJECT_DIR$/src/org/shadow/states/State.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="202" />
-    <option name="y" value="273" />
-    <option name="width" value="812" />
-    <option name="height" value="612" />
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -382,7 +382,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="202" y="273" width="812" height="612" extended-state="0" />
+    <frame x="1358" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -397,7 +397,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31066668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17651515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -474,20 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/shadow/states/Active.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/shadow/states/Iddle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/shadow/entidad/Command.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="23" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
@@ -516,13 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/shadow/states/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/shadow/manager/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="110" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
@@ -532,11 +511,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/shadow/entidad/Ascensor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="134" selection-start="341" selection-end="341" vertical-scroll-proportion="0.49465242">
+        <state line="17" column="134" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#Ascensor#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/shadow/states/Iddle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="16" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/shadow/states/Active.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="19" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/shadow/states/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="4" selection-start="305" selection-end="305" vertical-scroll-proportion="0.46896553">
+          <folding />
         </state>
       </provider>
     </entry>
