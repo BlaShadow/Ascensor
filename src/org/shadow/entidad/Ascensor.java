@@ -1,42 +1,69 @@
 package org.shadow.entidad;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import org.shadow.entidad.sorts.SortCommand;
+import org.shadow.states.Active;
+import org.shadow.states.Iddle;
+import org.shadow.states.InActive;
+import org.shadow.states.State;
 
-/**
- * Created with IntelliJ IDEA.
- * User: BlackShadow
- * Date: 1/18/14
- * Time: 4:25 PM
- * To change this template use File | Settings | File Templates.
- */
+import java.util.*;
+
 public class Ascensor extends Thread {
 
-    /*
-    *
-    * TODO Sorted Queue
-    *
-    * */
-    private Queue<Command> peticiones = null;
-    private State estado = null;
+    private final int INTERVAL = 1000;
+    private Direccion direccion = null;
+    private PriorityQueue<Command> peticiones = null;
+    private org.shadow.states.State estado = null;
     private int pisoActual = 0;
+    private SortCommand comparador = new SortCommand();
 
     public Ascensor(){
-        peticiones = new LinkedList<Command>();
+        peticiones = new PriorityQueue<Command>(1,comparador);
     }
 
-    public void setState(State state){
+    public void setEstado(org.shadow.states.State state){
         this.estado = state;
     }
 
+    public int getPeticiones()
+    {
+        return this.peticiones.size();
+    }
+
     public void addPerticion(Command peticion){
+        System.out.println("Nueva peticion");
+
+        estado = new Active(this);
         peticiones.add(peticion);
+
+        /*
+        *
+        * TODO sort peticiones on add new command
+        *
+        * */
     }
 
     @Override
     public void run(){
+         while (true){
+             try {
+                 sleep(this.INTERVAL);
+             } catch (InterruptedException e) {
+                 e.printStackTrace();
+             }
 
+             this.estado.execute();
+
+             if(peticiones.size() >0){
+                Command peticion = peticiones.poll();
+
+                System.out.println(this.getName() + " Ascensor ejecutandoce " + peticiones.size() + " Peticion " + peticion.getDireccion() + " " + peticion.getPisoDestino());
+
+                if(peticiones.size() == 0){
+                    estado = new Iddle(this);
+                }
+             }
+         }
     }
 
     public int getPisoActual() {
@@ -45,5 +72,18 @@ public class Ascensor extends Thread {
 
     public void setPisoActual(int pisoActual) {
         this.pisoActual = pisoActual;
+    }
+
+    public Direccion getDireccion()
+    {
+        return this.direccion;
+    }
+
+    public void setDireccion(Direccion direccion) {
+        if(direccion == Direccion.DETENIDO){
+            this.estado = new InActive(this);
+        }
+
+        this.direccion = direccion;
     }
 }

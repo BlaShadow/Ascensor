@@ -1,14 +1,7 @@
 package org.shadow.states;
 
 import org.shadow.entidad.Ascensor;
-
-/**
- * Created with IntelliJ IDEA.
- * User: BlackShadow
- * Date: 1/18/14
- * Time: 4:31 PM
- * To change this template use File | Settings | File Templates.
- */
+import org.shadow.entidad.Direccion;
 
 public class DoorOpen extends State{
 
@@ -18,6 +11,10 @@ public class DoorOpen extends State{
 
     @Override
     public void execute() {
+        this.timer = this.timer + 1;
 
+        if(this.timer > 20){
+            System.out.println("Cerrado de las puertas forzado");
+        }
     }
 }
