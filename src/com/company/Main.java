@@ -2,6 +2,7 @@ package com.company;
 
 import org.shadow.entidad.Command;
 import org.shadow.entidad.Direccion;
+import org.shadow.entidad.TipoPeticion;
 import org.shadow.entidad.sorts.SortCommand;
 import org.shadow.manager.SistemaManager;
 import org.shadow.manager.factory.ManagerFactory;
@@ -17,8 +18,8 @@ public class Main {
         SistemaManager manager = ManagerFactory.getManager();
         Random rand = new Random();
 
-        for (int loop=0;loop<4;loop++){
-            for(int i=0;i<100;i++){
+        for (int loop=0;loop<2;loop++){
+            /*for(int i=0;i<100;i++){
                 int pisoOrigen = 0;
                 int pisoDestino = rand.nextInt(100);
                 Direccion direccion = i % 2 == 0?Direccion.ARRIBA:Direccion.ABAJO;
@@ -27,6 +28,33 @@ public class Main {
 
                 manager.peticion(peticion);
             }
+            */
+
+            for(int i=0;i<10;i++){
+                int pisoOrigen = 0;
+                int pisoDestino = rand.nextInt(100);
+                Direccion direccion = Direccion.DETENIDO;
+
+                Command peticion = new Command(pisoOrigen,pisoDestino,direccion);
+
+                if(i == 5)
+                    peticion.setTipo(TipoPeticion.EMERGENCIA);
+
+                manager.peticion(peticion);
+            }
+
+            /*
+            for(int i=0;i<100;i++){
+                int pisoOrigen = 0;
+                int pisoDestino = rand.nextInt(100);
+                Direccion direccion = Direccion.DETENIDO;
+
+                Command peticion = new Command(pisoOrigen,pisoDestino,direccion);
+                peticion.setTipo(TipoPeticion.PUERTAABIERTA);
+
+                manager.peticion(peticion);
+            }
+            */
         }
 
         //Hayao Miyazaki

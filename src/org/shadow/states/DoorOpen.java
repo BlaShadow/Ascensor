@@ -13,7 +13,7 @@ public class DoorOpen extends State{
     public void execute() {
         this.timer = this.timer + 1;
 
-        if(this.timer > 20){
+        if(this.timer > 60){
             System.out.println("Cerrado de las puertas forzado");
         }
     }

@@ -1,10 +1,7 @@
 package org.shadow.entidad;
 
 import org.shadow.entidad.sorts.SortCommand;
-import org.shadow.states.Active;
-import org.shadow.states.Iddle;
-import org.shadow.states.InActive;
-import org.shadow.states.State;
+import org.shadow.states.*;
 
 import java.util.*;
 
@@ -23,6 +20,11 @@ public class Ascensor extends Thread {
 
     public void setEstado(org.shadow.states.State state){
         this.estado = state;
+    }
+
+    public org.shadow.states.State getEstado()
+    {
+        return this.estado;
     }
 
     public int getPeticiones()
@@ -57,6 +59,10 @@ public class Ascensor extends Thread {
              if(peticiones.size() >0){
                 Command peticion = peticiones.poll();
 
+                 if( (getEstado() instanceof DoorOpen) == false && peticion.getTipo() == TipoPeticion.PUERTAABIERTA){
+                     setEstado(new DoorOpen(this));
+                 }
+
                 System.out.println(this.getName() + " Ascensor ejecutandoce " + peticiones.size() + " Peticion " + peticion.getDireccion() + " " + peticion.getPisoDestino());
 
                 if(peticiones.size() == 0){
@@ -74,8 +80,7 @@ public class Ascensor extends Thread {
         this.pisoActual = pisoActual;
     }
 
-    public Direccion getDireccion()
-    {
+    public Direccion getDireccion(){
         return this.direccion;
     }
 
