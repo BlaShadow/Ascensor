@@ -90,7 +90,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.28557506">
       <split-first>
         <leaf>
-          <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="26" column="19" selection-start="793" selection-end="793" vertical-scroll-proportion="0.5958763">
@@ -159,10 +159,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Command.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="Command.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/org/shadow/entidad/Command.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="20" selection-start="101" selection-end="101" vertical-scroll-proportion="0.1574074">
+                <state line="9" column="4" selection-start="199" selection-end="199" vertical-scroll-proportion="0.28333333">
                   <folding>
                     <element signature="method#Command#0;class#Command#0" expanded="false" />
                     <element signature="method#getDireccion#0;class#Command#0" expanded="false" />
@@ -256,16 +256,16 @@
         <option value="$PROJECT_DIR$/src/org/shadow/entidad/TypoPeticion.java" />
         <option value="$PROJECT_DIR$/src/org/shadow/entidad/Ascensor.java" />
         <option value="$PROJECT_DIR$/src/org/shadow/states/DoorOpen.java" />
-        <option value="$PROJECT_DIR$/src/org/shadow/entidad/Command.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/org/shadow/entidad/sorts/SortCommand.java" />
         <option value="$PROJECT_DIR$/src/org/shadow/entidad/TipoPeticion.java" />
+        <option value="$PROJECT_DIR$/src/org/shadow/entidad/Command.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="90" />
-    <option name="y" value="391" />
+    <option name="x" value="-21" />
+    <option name="y" value="138" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -596,7 +596,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="90" y="391" width="1382" height="744" extended-state="0" />
+    <frame x="-21" y="138" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -797,9 +797,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="19" selection-start="793" selection-end="793" vertical-scroll-proportion="0.5958763">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/shadow/entidad/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="101" selection-end="101" vertical-scroll-proportion="0.1574074">
+        <state line="9" column="4" selection-start="199" selection-end="199" vertical-scroll-proportion="0.28333333">
           <folding>
             <element signature="method#Command#0;class#Command#0" expanded="false" />
             <element signature="method#getDireccion#0;class#Command#0" expanded="false" />
@@ -809,13 +816,6 @@
             <element signature="method#getTipo#0;class#Command#0" expanded="false" />
             <element signature="method#setTipo#0;class#Command#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="19" selection-start="793" selection-end="793" vertical-scroll-proportion="0.5958763">
-          <folding />
         </state>
       </provider>
     </entry>

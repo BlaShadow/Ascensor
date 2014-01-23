@@ -7,6 +7,7 @@ public class Command {
     private Direccion direccion;
     private TipoPeticion tipo = TipoPeticion.PETICION;
 
+
     public Command(int pisoOrigen,int pisoDestino,Direccion direccion){
         this.direccion = direccion;
         this.pisoOrigen = pisoOrigen;
